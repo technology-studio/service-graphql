@@ -10,11 +10,11 @@ import {
 } from '@txo/service-prop'
 // import { CODE_VALIDATION_ERROR } from '@txo/react-service-error-handler'
 import { Log } from '@txo/log'
-import type { OperationOptions } from '@txo-peer-dep/service-graphql'
-
 import type {
+  OperationOptions,
   ExtendedGraphQlError,
 } from '../Model/Types'
+
 import {
   FetchResult, ApolloError, isApolloError,
 } from '@apollo/client'

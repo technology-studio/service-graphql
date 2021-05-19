@@ -6,7 +6,7 @@
 
 import {
   configManager,
-  levels,
+  Level,
 } from '@txo-peer-dep/log'
 import * as ConsoleLogger from '@txo/log-console'
 // import * as ReactotronLogger from '@txo/log-reactotron'
@@ -23,11 +23,11 @@ configManager.update({
     // },
   },
   defaultLevelForNodeEnvironmentMap: {
-    production: levels.ERROR,
-    development: levels.INFO,
+    production: Level.ERROR,
+    development: Level.INFO,
   },
   levelOverride: {
-    level: levels.DEBUG,
+    level: Level.DEBUG,
     namespacePatternList: [
       // '@txo.data-table.src.Api.TableProxy',
     ],

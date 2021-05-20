@@ -32,6 +32,7 @@
   "devDependencies": {
     "@apollo/client": "^3.3.19",
     "@txo-peer-dep/log": "^4.0.0",
+    "@txo-peer-dep/service-graphql": "^1.0.0",
     "@txo/log-console": "^3.0.0",
     "@types/jest": "^26.0.23",
     "@types/lodash.get": "^4.4.6",
@@ -60,8 +61,7 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "testMatch": [
-      "<rootDir>/__tests__/**/*.ts",
-      "**/?(*.)(spec|test).ts?(x)"
+      "<rootDir>/__tests__/**/?(*.)(spec|test).ts?(x)"
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!@txo).+\\.js$"
@@ -70,6 +70,7 @@
       "/node_modules/",
       "<rootDir>/__tests__/Config/",
       "<rootDir>/__tests__/Setup.ts",
+      "<rootDir>/__tests__/Data.ts",
       "<rootDir>/__tests__/Utils/"
     ],
     "setupFiles": [

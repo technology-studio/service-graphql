@@ -30,38 +30,38 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@apollo/client": "^3.3.13",
-    "@txo-peer-dep/log": "^3.0.0",
-    "@txo/log-console": "^2.0.0",
-    "@types/jest": "^26.0.22",
+    "@apollo/client": "^3.3.19",
+    "@txo-peer-dep/log": "^4.0.0",
+    "@txo-peer-dep/service-graphql": "^1.0.0",
+    "@txo/log-console": "^3.0.0",
+    "@types/jest": "^26.0.23",
     "@types/lodash.get": "^4.4.6",
-    "@types/react": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
-    "concurrently": "^6.0.0",
-    "eslint": "^7.23.0",
-    "eslint-config-txo-typescript": "^2.2.0",
+    "@types/react": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "concurrently": "^6.1.0",
+    "eslint": "^7.26.0",
+    "eslint-config-txo-typescript": "^2.3.1",
     "eslint-formatter-pretty": "^4.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.3.3",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.23.2",
     "graphql": "^14.7.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
-    "npm-check-updates": "^11.3.0",
+    "npm-check-updates": "^11.5.13",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3"
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
     "testMatch": [
-      "<rootDir>/__tests__/**/*.ts",
-      "**/?(*.)(spec|test).ts?(x)"
+      "<rootDir>/__tests__/**/?(*.)(spec|test).ts?(x)"
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!@txo).+\\.js$"
@@ -70,6 +70,7 @@
       "/node_modules/",
       "<rootDir>/__tests__/Config/",
       "<rootDir>/__tests__/Setup.ts",
+      "<rootDir>/__tests__/Data.ts",
       "<rootDir>/__tests__/Utils/"
     ],
     "setupFiles": [

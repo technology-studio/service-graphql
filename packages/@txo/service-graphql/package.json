@@ -27,7 +27,7 @@
     "prepare": "yarn build"
   },
   "dependencies": {
-    "@txo/log": "^1.0.0",
+    "@txo/log": "^2.0.0",
     "@txo/service-prop": "^1.0.0",
     "lodash.get": "^4.4.2"
   },

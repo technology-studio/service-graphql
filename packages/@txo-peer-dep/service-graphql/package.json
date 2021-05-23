@@ -26,6 +26,8 @@
     "build:watch:lib": "yarn tsc --watch",
     "prepare": "yarn build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@txo/config-manager": "^3.0.1"
+  },
   "peerDependencies": {}
 }

@@ -15,5 +15,5 @@ export type Config = {
 }
 
 export const configManager: ConfigManager<Config> = new ConfigManager<Config>({
-  errorResponseTranslator: defaultErrorResponseTranslator,
+  errorResponseTranslator: () => defaultErrorResponseTranslator,
 })

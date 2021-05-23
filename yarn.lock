@@ -642,6 +642,11 @@
   dependencies:
     "@txo/config-manager" "^3.0.1"
 
+"@txo-peer-dep/service-graphql@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.technologystudio.sk/@txo-peer-dep%2fservice-graphql/-/service-graphql-1.0.0.tgz#df7b27e87080f05d6a879880964639d1ef5a03bc"
+  integrity sha512-6kJHMbW1A8suSZRBBxJDvohtcWw+As1fMSsipeImV2y7iRrWNbphOgG5fb1aJZp9xYxtaO3uWwYS5DVcZLWqKQ==
+
 "@txo/config-manager@^3.0.1":
   version "3.0.1"
   resolved "https://npm.technologystudio.sk/@txo%2fconfig-manager/-/config-manager-3.0.1.tgz#cf6bc6047a67f22eeae763713d28e4c3b446132c"

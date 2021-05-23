@@ -657,10 +657,10 @@
   resolved "https://npm.technologystudio.sk/@txo%2flog/-/log-2.0.0.tgz#e585a162dc6b974eaaafeff565ef2d2dca790d0b"
   integrity sha512-g56HqsXcSj35HAT4YtgdamROF2Xuq91z00WdblVmOXqpiNkhv5jbXKjykxVLCDq6n3GByG0TVgIvy0mA2YkVzQ==
 
-"@txo/service-prop@^1.0.0":
-  version "1.0.0"
-  resolved "https://npm.technologystudio.sk/@txo%2fservice-prop/-/service-prop-1.0.0.tgz#7e4fc238ce0d179799fc42ac7d4206afffe84444"
-  integrity sha512-U5fI2zy54OOMrK7Am1ZlvF3Ynvd3TdoP91gBVQwsTlrDxBFWAG00L+K2wswJVAXkXwu1pAnwp1yH54OvjPX4Vw==
+"@txo/service-prop@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.technologystudio.sk/@txo%2fservice-prop/-/service-prop-1.1.0.tgz#35a25f78a9578003379373f705d4ef3f7c2f9ee7"
+  integrity sha512-qnmWGZgflz6tHXwnXa72lHJviwD3Kg9sf9rAsUXrIocNsiOTFGAfvBqtYuIbUpq1ReyCO2Y0GcOUQiwSY8LmMA==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.14"
@@ -2757,12 +2757,10 @@ graphql-tag@^2.12.0:
   dependencies:
     tslib "^2.1.0"
 
-graphql@^14.7.0:
-  version "14.7.0"
-  resolved "https://npm.technologystudio.sk/graphql/-/graphql-14.7.0.tgz#7fa79a80a69be4a31c27dda824dc04dac2035a72"
-  integrity sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA==
-  dependencies:
-    iterall "^1.2.2"
+graphql@^15.5.0:
+  version "15.5.0"
+  resolved "https://npm.technologystudio.sk/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
+  integrity sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
 
 growly@^1.3.0:
   version "1.3.0"
@@ -3374,11 +3372,6 @@ istanbul-reports@^3.0.2:
   dependencies:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
-
-iterall@^1.2.2:
-  version "1.3.0"
-  resolved "https://npm.technologystudio.sk/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
-  integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
 
 jest-changed-files@^26.6.2:
   version "26.6.2"

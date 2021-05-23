@@ -8,6 +8,7 @@
 import {
   ServiceErrorException,
   isServiceErrorException,
+  ServiceCallResult,
 } from '@txo/service-prop'
 import { configManager, OperationOptions } from '@txo-peer-dep/service-graphql'
 import { Log } from '@txo/log'
@@ -16,8 +17,8 @@ import { FetchResult } from '@apollo/client'
 
 const log = new Log('txo.react-graphql-service.Services.ResponseProcessor')
 
-export const singleOperationDataTranslator = <DATA, SUB_DATA>(
-  data: DATA,
+export const singleOperationDataTranslator = <DATA, SUB_DATA=DATA>(
+  data: DATA | undefined | null,
   path?: string,
   { onSuccessDataMapper }: OperationOptions = {},
 ): SUB_DATA => {
@@ -45,20 +46,23 @@ export const operationProcessor = async <DATA, SUB_DATA = DATA>(
   response: FetchResult<DATA>,
   path?: string,
   options: OperationOptions = {},
-): Promise<SUB_DATA> => {
+): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => {
   log.debug('OPERATION PROCESSOR', response)
   if (response.errors) {
     return errorProcessor(response, options)
   }
-  return singleOperationDataTranslator(response.data, path, options)
+  return {
+    data: singleOperationDataTranslator<DATA, SUB_DATA>(response.data, path, options),
+    callData: response,
+  }
 }
 
-export const operationPromiseProcessor = async <DATA>(
+export const operationPromiseProcessor = async <DATA, SUB_DATA = DATA>(
   promise: Promise<FetchResult<DATA>>,
   path?: string,
   options: OperationOptions = {},
-): Promise<DATA> => (
+): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => (
   promise
-    .then(async response => operationProcessor(response, path, options))
+    .then(async response => operationProcessor<DATA, SUB_DATA>(response, path, options))
     .catch(async error => errorProcessor(error, options))
 )

@@ -33,6 +33,8 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
 
+const EMPTY_ARRAY: ServiceError[] = []
+
 export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | ApolloError, options: OperationOptions = {}): ServiceError[] => {
   log.debug('TRANSLATE GRAPH_QL ERROR RESPONSE', { response, options })
   const serviceErrorList: ServiceError[] = []
@@ -57,5 +59,5 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
       populateGraphQLErrors(serviceErrorList, error)
     })
   }
-  return serviceErrorList
+  return serviceErrorList.length === 0 ? EMPTY_ARRAY : serviceErrorList
 }

@@ -27,7 +27,7 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
     key: error.key || error.extensions?.code || ServiceErrorKey.SERVER_ERROR,
     message: error.message,
     data: error,
-    operationName,
+    serviceName: operationName,
   })
 }
 
@@ -46,7 +46,7 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         key: ServiceErrorKey.NETWORK_ERROR,
         message: networkError.message || message,
         data: networkError,
-        operationName: options.operationName,
+        serviceName: options.operationName,
       })
     }
     graphQLErrors.forEach(graphQLError => {
@@ -54,7 +54,7 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         key: ServiceErrorKey.CLIENT_ERROR,
         message: graphQLError.message || message,
         data: graphQLError,
-        operationName: options.operationName,
+        serviceName: options.operationName,
       })
     })
   } else {

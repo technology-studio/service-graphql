@@ -21,13 +21,13 @@ import {
 
 const log = new Log('txo.react-graphql-service.Services.ResponseTranslator')
 
-const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: ExtendedGraphQlError, operationName: string | undefined): void => {
+const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: ExtendedGraphQlError, serviceName: string | undefined): void => {
   serviceErrorList.push({
     // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
     key: error.key || error.extensions?.code || ServiceErrorKey.SERVER_ERROR,
     message: error.message,
     data: error,
-    operationName,
+    serviceName,
   })
 }
 
@@ -46,7 +46,7 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         key: ServiceErrorKey.NETWORK_ERROR,
         message: networkError.message || message,
         data: networkError,
-        operationName: options.operationName,
+        serviceName: options.serviceName,
       })
     }
     graphQLErrors.forEach(graphQLError => {
@@ -54,12 +54,12 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         key: ServiceErrorKey.CLIENT_ERROR,
         message: graphQLError.message || message,
         data: graphQLError,
-        operationName: options.operationName,
+        serviceName: options.serviceName,
       })
     })
   } else {
     response.errors?.forEach(error => {
-      populateGraphQLErrors(serviceErrorList, error, options.operationName)
+      populateGraphQLErrors(serviceErrorList, error, options.serviceName)
     })
   }
   return serviceErrorList.length === 0 ? EMPTY_ARRAY : serviceErrorList

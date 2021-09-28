@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@txo/log": "^2.0.0",
-    "@txo/service-prop": "^2.0.0",
+    "@txo/service-prop": "^2.0.1",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {

@@ -36,7 +36,7 @@
     "@txo-peer-dep/log": "^4.0.0",
     "@txo-peer-dep/service-graphql": "^2.1.0",
     "@txo/log-console": "^3.0.0",
-    "@txo/service-prop": "^2.0.0",
+    "@txo/service-prop": "^2.0.1",
     "@types/jest": "^27.0.2",
     "@types/lodash.get": "^4.4.6",
     "@types/react": "^17.0.24",

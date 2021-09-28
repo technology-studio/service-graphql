@@ -894,10 +894,10 @@
   resolved "https://npm.technologystudio.sk/@txo%2flog/-/log-2.0.0.tgz#e585a162dc6b974eaaafeff565ef2d2dca790d0b"
   integrity sha512-g56HqsXcSj35HAT4YtgdamROF2Xuq91z00WdblVmOXqpiNkhv5jbXKjykxVLCDq6n3GByG0TVgIvy0mA2YkVzQ==
 
-"@txo/service-prop@^2.0.0":
-  version "2.0.0"
-  resolved "https://npm.technologystudio.sk/@txo%2fservice-prop/-/service-prop-2.0.0.tgz#145a2fe1cc2ffdc7b98856a15a3baddaa980ad22"
-  integrity sha512-juNnjkfTrMjVcdHN5Fa4u+Hc5bAq7dVNqIp+OQM/s2+L8APtTtg3waOQJG3p9nVk6Qpd5sDkAyKnMs+lHQ0PQA==
+"@txo/service-prop@^2.0.1":
+  version "2.0.1"
+  resolved "https://npm.technologystudio.sk/@txo%2fservice-prop/-/service-prop-2.0.1.tgz#e8bb4a498405213582a134d8792bd7995551a0a4"
+  integrity sha512-ereMTElrx5RjZ/jkDmpb6OTlWHTuy4TrB0ZIABkCchTFDr2VcDrC/I+kz+TDvuOT7eGRrkcuLd20G7ZjXkdUzw==
 
 "@types/babel__core@^7.0.0":
   version "7.1.14"

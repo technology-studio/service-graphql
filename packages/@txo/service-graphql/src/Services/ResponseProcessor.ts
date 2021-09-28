@@ -19,8 +19,8 @@ const log = new Log('txo.react-graphql-service.Services.ResponseProcessor')
 
 export const singleOperationDataTranslator = <DATA, SUB_DATA=DATA>(
   data: DATA | undefined | null,
-  path?: string,
-  { onSuccessDataMapper }: OperationOptions = {},
+  path: string | undefined,
+  { onSuccessDataMapper }: OperationOptions,
 ): SUB_DATA => {
   const _data = path ? data && _get(data, path) : data
   return onSuccessDataMapper
@@ -30,23 +30,23 @@ export const singleOperationDataTranslator = <DATA, SUB_DATA=DATA>(
 
 export const errorProcessor = async (
   resultOrException: FetchResult<unknown> | ServiceErrorException,
-  options: OperationOptions = {},
+  options: OperationOptions,
 ): Promise<never> => {
   if (isServiceErrorException(resultOrException)) {
     throw resultOrException
   }
 
   log.debug('ERROR PROCESSOR', resultOrException)
-  throw new ServiceErrorException(
-    configManager.config.errorResponseTranslator(resultOrException, options),
-    options.operationName,
-  )
+  throw new ServiceErrorException({
+    serviceErrorList: configManager.config.errorResponseTranslator(resultOrException, options),
+    serviceName: options.operationName,
+  })
 }
 
 export const operationProcessor = async <DATA, SUB_DATA = DATA>(
   response: FetchResult<DATA>,
-  path?: string,
-  options: OperationOptions = {},
+  path: string | undefined,
+  options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => {
   log.debug('OPERATION PROCESSOR', response)
   if (response.errors) {
@@ -60,8 +60,8 @@ export const operationProcessor = async <DATA, SUB_DATA = DATA>(
 
 export const operationPromiseProcessor = async <DATA, SUB_DATA = DATA>(
   promise: Promise<FetchResult<DATA>>,
-  path?: string,
-  options: OperationOptions = {},
+  path: string | undefined,
+  options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => (
   promise
     .then(async response => operationProcessor<DATA, SUB_DATA>(response, path, options))

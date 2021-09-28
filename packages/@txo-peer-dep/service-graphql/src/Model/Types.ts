@@ -25,7 +25,7 @@ export type OperationOptions = {
   // onErrorCodeMapper?: (errorCode: number, data: any) => any,
   // onServiceErrorMapper?: (data: ServiceError[]) => ServiceError[],
   onSuccessDataMapper?: <DATA, SUB_DATA>(data: DATA) => SUB_DATA,
-  operationName?: string,
+  operationName: string,
 }
 
-export type GraphQlErrorResponseTranslator = (response: FetchResult<unknown>, options?: OperationOptions) => ServiceError[]
+export type GraphQlErrorResponseTranslator = (response: FetchResult<unknown>, options: OperationOptions) => ServiceError[]

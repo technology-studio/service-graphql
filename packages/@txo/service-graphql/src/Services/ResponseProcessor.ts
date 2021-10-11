@@ -39,6 +39,7 @@ export const errorProcessor = async (
   throw new ServiceErrorException({
     serviceErrorList: configManager.config.errorResponseTranslator(resultOrException, options),
     serviceName: options.operationName,
+    context: options.context,
   })
 }
 

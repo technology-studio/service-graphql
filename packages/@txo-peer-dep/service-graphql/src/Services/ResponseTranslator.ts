@@ -47,9 +47,10 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         data: networkError,
       })
     }
-    graphQLErrors.forEach(graphQLError => {
+    graphQLErrors.forEach((graphQLError: ExtendedGraphQlError) => {
       serviceErrorList.push({
-        key: ServiceErrorKey.CLIENT_ERROR,
+        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+        key: graphQLError.key || ServiceErrorKey.CLIENT_ERROR,
         message: graphQLError.message || message,
         data: graphQLError,
       })

@@ -1,6 +1,6 @@
 {
   "name": "@txo-peer-dep/service-graphql",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Technology Studio - Service graphql",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

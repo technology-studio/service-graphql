@@ -26,7 +26,7 @@ export type OperationOptions = {
   // onServiceErrorMapper?: (data: ServiceError[]) => ServiceError[],
   onSuccessDataMapper?: <DATA, SUB_DATA>(data: DATA) => SUB_DATA,
   operationName: string,
-  context?: string,
+  context: string,
   path?: string,
 }
 

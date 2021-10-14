@@ -16,7 +16,11 @@ import type {
 } from '../Model/Types'
 
 import {
-  FetchResult, ApolloError, isApolloError,
+  FetchResult,
+  ApolloError,
+  isApolloError,
+  ServerError,
+  ServerParseError,
 } from '@apollo/client'
 
 const log = new Log('txo.react-graphql-service.Services.ResponseTranslator')
@@ -32,6 +36,8 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
+export const isServerError = (error: Error | ServerParseError | ServerError): error is ServerError => 'result' in error
+export const hasStatusCode = (error: Error | ServerParseError | ServerError): boolean => 'statusCode' in error
 
 const EMPTY_ARRAY: ServiceError[] = []
 
@@ -42,10 +48,15 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
     const { networkError, graphQLErrors, message } = response
     if (networkError) {
       serviceErrorList.push({
-        key: ServiceErrorKey.NETWORK_ERROR,
+        key: hasStatusCode(networkError) ? ServiceErrorKey.CLIENT_ERROR : ServiceErrorKey.NETWORK_ERROR,
         message: networkError.message || message,
         data: networkError,
       })
+      if (isServerError(networkError)) {
+        networkError.result.errors?.forEach((error: ExtendedGraphQlError) => {
+          populateGraphQLErrors(serviceErrorList, error)
+        })
+      }
     }
     graphQLErrors.forEach((graphQLError: ExtendedGraphQlError) => {
       serviceErrorList.push({

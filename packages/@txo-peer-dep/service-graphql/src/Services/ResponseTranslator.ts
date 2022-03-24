@@ -34,8 +34,8 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
   })
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
+export const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
 export const isServerError = (error: Error | ServerParseError | ServerError): error is ServerError => 'result' in error
 export const hasStatusCode = (error: Error | ServerParseError | ServerError): boolean => 'statusCode' in error
 

@@ -62,25 +62,5 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.3",
     "typescript": "^4.6.2"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "testMatch": [
-      "<rootDir>/__tests__/**/?(*.)(spec|test).ts?(x)"
-    ],
-    "transformIgnorePatterns": [
-      "/node_modules/(?!@txo).+\\.js$"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "<rootDir>/__tests__/Config/",
-      "<rootDir>/__tests__/Setup.ts",
-      "<rootDir>/__tests__/Data.ts",
-      "<rootDir>/__tests__/Utils/"
-    ],
-    "setupFiles": [
-      "<rootDir>/__tests__/Setup.ts"
-    ]
   }
 }

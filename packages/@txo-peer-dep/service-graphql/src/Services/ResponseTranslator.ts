@@ -39,13 +39,13 @@ export const isApolloErrorInternal = (response: any): response is ApolloError =>
 export const isServerError = (error: Error | ServerParseError | ServerError): error is ServerError => 'result' in error
 export const isServerParseError = (error: Error | ServerParseError | ServerError): error is ServerParseError => 'statusCode' in error
 
-const EMPTY_ARRAY: ServiceError[] = []
+const UNKNOWN_ERROR = 'UNKNOWN_ERROR'
 
 export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | ApolloError, options: OperationOptions): ServiceError[] => {
   log.debug('TRANSLATE GRAPH_QL ERROR RESPONSE', { response, options })
   const serviceErrorList: ServiceError[] = []
   if (isApolloErrorInternal(response)) {
-    const { networkError, graphQLErrors, message } = response
+    const { networkError, clientErrors, graphQLErrors, message } = response
     if (networkError) {
       serviceErrorList.push({
         key: isServerParseError(networkError) ? ServiceErrorKey.CLIENT_ERROR : ServiceErrorKey.NETWORK_ERROR,
@@ -66,10 +66,24 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         data: graphQLError,
       })
     })
+    clientErrors.forEach((error) => {
+      serviceErrorList.push({
+        key: ServiceErrorKey.CLIENT_ERROR,
+        message: error.message,
+        data: error,
+      })
+    })
   } else {
     response.errors?.forEach(error => {
       populateGraphQLErrors(serviceErrorList, error)
     })
   }
-  return serviceErrorList.length === 0 ? EMPTY_ARRAY : serviceErrorList
+  if (serviceErrorList.length === 0) {
+    serviceErrorList.push({
+      key: UNKNOWN_ERROR,
+      message: 'Unknown error',
+      data: response,
+    })
+  }
+  return serviceErrorList
 }

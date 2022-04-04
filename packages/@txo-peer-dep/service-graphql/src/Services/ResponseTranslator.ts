@@ -23,6 +23,8 @@ import {
   ServerParseError,
 } from '@apollo/client'
 
+import { UNKNOWN_ERROR } from '../Model'
+
 const log = new Log('txo.react-graphql-service.Services.ResponseTranslator')
 
 const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: ExtendedGraphQlError): void => {
@@ -38,8 +40,6 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
 export const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
 export const isServerError = (error: Error | ServerParseError | ServerError): error is ServerError => 'result' in error
 export const isServerParseError = (error: Error | ServerParseError | ServerError): error is ServerParseError => 'statusCode' in error
-
-const UNKNOWN_ERROR = 'UNKNOWN_ERROR'
 
 export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | ApolloError, options: OperationOptions): ServiceError[] => {
   log.debug('TRANSLATE GRAPH_QL ERROR RESPONSE', { response, options })

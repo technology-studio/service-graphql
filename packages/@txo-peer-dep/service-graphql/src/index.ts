@@ -6,4 +6,5 @@
 
 export * from './Api/Config'
 export * from './Model/Types'
+export * from './Model'
 export * from './Services/ResponseTranslator'

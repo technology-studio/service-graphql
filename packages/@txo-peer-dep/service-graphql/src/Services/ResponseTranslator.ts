@@ -23,6 +23,8 @@ import {
   ServerParseError,
 } from '@apollo/client'
 
+import { UNKNOWN_ERROR } from '../Model'
+
 const log = new Log('txo.react-graphql-service.Services.ResponseTranslator')
 
 const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: ExtendedGraphQlError): void => {
@@ -37,18 +39,16 @@ const populateGraphQLErrors = (serviceErrorList: ServiceError[], error: Extended
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
 export const isApolloErrorInternal = (response: any): response is ApolloError => isApolloError(response)
 export const isServerError = (error: Error | ServerParseError | ServerError): error is ServerError => 'result' in error
-export const hasStatusCode = (error: Error | ServerParseError | ServerError): boolean => 'statusCode' in error
-
-const EMPTY_ARRAY: ServiceError[] = []
+export const isServerParseError = (error: Error | ServerParseError | ServerError): error is ServerParseError => 'statusCode' in error
 
 export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | ApolloError, options: OperationOptions): ServiceError[] => {
   log.debug('TRANSLATE GRAPH_QL ERROR RESPONSE', { response, options })
   const serviceErrorList: ServiceError[] = []
   if (isApolloErrorInternal(response)) {
-    const { networkError, graphQLErrors, message } = response
+    const { networkError, clientErrors, graphQLErrors, message } = response
     if (networkError) {
       serviceErrorList.push({
-        key: hasStatusCode(networkError) ? ServiceErrorKey.CLIENT_ERROR : ServiceErrorKey.NETWORK_ERROR,
+        key: isServerParseError(networkError) ? ServiceErrorKey.CLIENT_ERROR : ServiceErrorKey.NETWORK_ERROR,
         message: networkError.message || message,
         data: networkError,
       })
@@ -66,10 +66,24 @@ export const defaultErrorResponseTranslator = (response: FetchResult<unknown> | 
         data: graphQLError,
       })
     })
+    clientErrors.forEach((error) => {
+      serviceErrorList.push({
+        key: ServiceErrorKey.CLIENT_ERROR,
+        message: error.message,
+        data: error,
+      })
+    })
   } else {
     response.errors?.forEach(error => {
       populateGraphQLErrors(serviceErrorList, error)
     })
   }
-  return serviceErrorList.length === 0 ? EMPTY_ARRAY : serviceErrorList
+  if (serviceErrorList.length === 0) {
+    serviceErrorList.push({
+      key: UNKNOWN_ERROR,
+      message: 'Unknown error',
+      data: response,
+    })
+  }
+  return serviceErrorList
 }

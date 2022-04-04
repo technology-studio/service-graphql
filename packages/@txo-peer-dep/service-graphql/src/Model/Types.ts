@@ -4,7 +4,10 @@
  * @Copyright: Technology Studio
 **/
 
-import { FetchResult } from '@apollo/client'
+import {
+  ApolloError,
+  FetchResult,
+} from '@apollo/client'
 import { GraphQLError } from 'graphql'
 
 import type {
@@ -30,4 +33,4 @@ export type OperationOptions = {
   path?: string,
 }
 
-export type GraphQlErrorResponseTranslator = (response: FetchResult<unknown>, options: OperationOptions) => ServiceError[]
+export type GraphQlErrorResponseTranslator = (response: ApolloError | FetchResult<unknown>, options: OperationOptions) => ServiceError[]

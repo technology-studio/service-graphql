@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 LATEST=$(
-  git ls-remote -h git@bitbucket.org:technology-studio/test-boilerplate-private-typescript.git |
+  git ls-remote -h git@github.com:technology-studio/test-boilerplate-typescript.git |
   grep refs/heads/main | awk '{ print $1 }'
 )
 echo $LATEST > .boilerplate-version

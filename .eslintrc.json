@@ -7,7 +7,7 @@
   "parserOptions": {
     "project": [
       "./tsconfig.json",
-      "./packages/**/tsconfig.json"
+      "./__tests__/tsconfig.json"
     ]
   }
 }

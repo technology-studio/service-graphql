@@ -2,7 +2,7 @@
 
 LATEST=$(
   git ls-remote -h git@github.com:technology-studio/test-boilerplate-typescript.git |
-  grep refs/heads/main | awk '{ print $1 }'
+  grep refs/heads/master | awk '{ print $1 }'
 )
 CURRENT=$(cat .boilerplate-version)
 echo "Latest version: $LATEST"

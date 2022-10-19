@@ -1,12 +1,15 @@
 {
   "extends": "./tsconfig-base.json",
   "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
     "paths": {
     }
   },
   "include": [
-    "example",
-    "__tests__"
+    "src"
   ],
   "exclude": [
     "node_modules"

@@ -5,15 +5,16 @@
  * @Copyright: Technology Studio
 **/
 
+import type { ServiceCallResult } from '@txo/service-prop'
 import {
   ServiceErrorException,
   isServiceErrorException,
-  ServiceCallResult,
 } from '@txo/service-prop'
-import { configManager, OperationOptions } from '@txo-peer-dep/service-graphql'
+import type { OperationOptions } from '@txo-peer-dep/service-graphql'
+import { configManager } from '@txo-peer-dep/service-graphql'
 import { Log } from '@txo/log'
 import _get from 'lodash.get'
-import { FetchResult } from '@apollo/client'
+import type { FetchResult } from '@apollo/client'
 
 const log = new Log('txo.react-graphql-service.Services.ResponseProcessor')
 

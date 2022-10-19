@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":automergeMinor"
+  ],
+  "rangeStrategy": "bump",
+  "assignees": [
+    "rostislav-simonik",
+    "erik-slovak"
+  ],
+  "reviewers": [
+    "rostislav-simonik",
+    "erik-slovak"
+  ]
+}

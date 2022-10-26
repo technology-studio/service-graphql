@@ -13,7 +13,7 @@
     "email": "npm@technologystudio.sk",
     "url": "https://github.com/technology-studio/"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "private": false,
   "scripts": {
     "build": "yarn build:clean && yarn build:lib",

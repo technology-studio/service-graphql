@@ -42,7 +42,7 @@
     "@txo-peer-dep/service-graphql": "^3.2.0"
   },
   "devDependencies": {
-    "@apollo/client": "^3.7.0",
+    "@apollo/client": "^3.7.1",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@semantic-release/changelog": "^6.0.1",
@@ -53,7 +53,7 @@
     "@txo/service-prop": "^2.2.1",
     "@types/jest": "^29.2.0",
     "@types/lodash.get": "^4.4.7",
-    "@types/react": "^18.0.23",
+    "@types/react": "^18.0.24",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
     "commitizen": "^4.2.5",

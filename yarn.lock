@@ -1271,10 +1271,10 @@
   resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.1.tgz#fd96044751a9930cf5136a7248ad8989efce756c"
   integrity sha512-CC+ZkiTbytuNVqvusQFdp72i1G2MhA5ITohxEMEi0qGLGIzxtYT20vYkoFRC8XPbsZydbu9uVtpH5wA/X/g/eg==
 
-"@txo/service-prop@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.1.tgz#47781f5ed37556503ed9363cc995e2d1c8fe07f1"
-  integrity sha512-6Ieb0bt8xMfsEf/6bHdOwOMlxtE9vrGx6ZZylXM1Dtp2qYWkw0aHI8dNaeGAMsWem9Raikz/qAgaZqiLXFy8ZQ==
+"@txo/service-prop@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.2.tgz#42dfd1088f662c92583b3521b45f29dd53b476ce"
+  integrity sha512-E2RNlFgrLX4A5/ZDlvOABZPtNvjxWY4XG0SKHZrQ1UUWmC0QGZINQlq1+oKkRb4SZwgNBqyhKRKozO7VuurvwQ==
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"

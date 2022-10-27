@@ -1,3 +1,10 @@
+## [4.3.2](https://github.com/technology-studio/service-graphql/compare/v4.3.1...v4.3.2) (2022-10-27)
+
+
+### Bug fixes
+
+* fix package.json ([#16](https://github.com/technology-studio/service-graphql/issues/16)) ([c84a97c](https://github.com/technology-studio/service-graphql/commit/c84a97c30927e58283def2161b8e1ce080a744a8))
+
 ## [4.3.1](https://github.com/technology-studio/service-graphql/compare/v4.3.0...v4.3.1) (2022-10-19)
 
 

@@ -6966,10 +6966,10 @@ safe-regex-test@^1.0.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semantic-release-slack-bot@^3.5.3:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/semantic-release-slack-bot/-/semantic-release-slack-bot-3.5.3.tgz#eaf638509210e01bbd401dcbc2af17ed36549348"
-  integrity sha512-QoLRfZPkgkER2s/DiIu0qA9pYu4am8ASu7xq3omCXl2oJ+fKdb1Rentgezzv7RefMXhO2q2aah1aqutWnSnlhw==
+semantic-release-slack-bot@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/semantic-release-slack-bot/-/semantic-release-slack-bot-4.0.0.tgz#f6c581a95fa5a5c98358da9ceca0613fe57e8349"
+  integrity sha512-A/R8vUEMpb/ZsuP4v+3BCC6K2uK/oC1keERpyaIntoNkOPLglxEuDRRt9EkCBAwQmMJXMafX3JwFVcNwPfWtuQ==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     micromatch "4.0.2"

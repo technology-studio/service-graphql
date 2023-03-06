@@ -22,8 +22,10 @@ export const singleOperationDataTranslator = <DATA, SUB_DATA=DATA>(
   data: DATA | undefined | null,
   { onSuccessDataMapper, path }: OperationOptions,
 ): SUB_DATA => {
-  const _data = path ? data && _get(data, path) : data
-  return onSuccessDataMapper
+  const _data = path != null && path !== ''
+    ? data != null && _get(data, path)
+    : data
+  return onSuccessDataMapper != null
     ? onSuccessDataMapper(_data)
     : _data
 }
@@ -49,8 +51,8 @@ export const operationProcessor = async <DATA, SUB_DATA = DATA>(
   options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => {
   log.debug('OPERATION PROCESSOR', response)
-  if (response.errors) {
-    return errorProcessor(response, options)
+  if (response.errors != null) {
+    return await errorProcessor(response, options)
   }
   return {
     data: singleOperationDataTranslator<DATA, SUB_DATA>(response.data, options),
@@ -62,7 +64,7 @@ export const operationPromiseProcessor = async <DATA, SUB_DATA = DATA>(
   promise: Promise<FetchResult<DATA>>,
   options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => (
-  promise
-    .then(async response => operationProcessor<DATA, SUB_DATA>(response, options))
-    .catch(async error => errorProcessor(error, options))
+  await promise
+    .then(async response => await operationProcessor<DATA, SUB_DATA>(response, options))
+    .catch(async error => await errorProcessor(error, options))
 )

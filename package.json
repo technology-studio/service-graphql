@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "^5.57.1",
     "commitizen": "^4.3.0",
     "concurrently": "^8.0.1",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-txo-typescript": "^3.2.27",
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",

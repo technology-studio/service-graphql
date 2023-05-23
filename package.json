@@ -59,7 +59,7 @@
     "commitizen": "^4.3.0",
     "concurrently": "^8.0.1",
     "eslint": "^8.41.0",
-    "eslint-config-txo-typescript": "^3.2.38",
+    "eslint-config-txo-typescript": "^3.2.39",
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.27.5",

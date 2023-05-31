@@ -51,7 +51,7 @@
     "@txo-peer-dep/service-graphql": "^3.2.2",
     "@txo/log-console": "^3.0.0",
     "@txo/service-prop": "^2.2.2",
-    "@types/jest": "^29.5.1",
+    "@types/jest": "^29.5.2",
     "@types/lodash.get": "^4.4.7",
     "@types/react": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^5.59.8",

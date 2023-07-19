@@ -23,17 +23,17 @@ export const singleOperationDataTranslator = <DATA, SUB_DATA=DATA>(
   { onSuccessDataMapper, path }: OperationOptions,
 ): SUB_DATA => {
   const _data = path != null && path !== ''
-    ? data != null && _get(data, path)
+    ? data != null ? _get(data, path) as SUB_DATA | null | undefined : undefined
     : data
   return onSuccessDataMapper != null
     ? onSuccessDataMapper(_data)
-    : _data
+    : _data as SUB_DATA
 }
 
-export const errorProcessor = async (
+export const errorProcessor = (
   resultOrException: FetchResult<unknown> | ServiceErrorException,
   options: OperationOptions,
-): Promise<never> => {
+): never => {
   if (isServiceErrorException(resultOrException)) {
     throw resultOrException
   }
@@ -46,13 +46,13 @@ export const errorProcessor = async (
   })
 }
 
-export const operationProcessor = async <DATA, SUB_DATA = DATA>(
+export const operationProcessor = <DATA, SUB_DATA = DATA>(
   response: FetchResult<DATA>,
   options: OperationOptions,
-): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => {
+): ServiceCallResult<SUB_DATA, FetchResult<DATA>> => {
   log.debug('OPERATION PROCESSOR', response)
   if (response.errors != null) {
-    return await errorProcessor(response, options)
+    return errorProcessor(response, options)
   }
   return {
     data: singleOperationDataTranslator<DATA, SUB_DATA>(response.data, options),
@@ -65,6 +65,6 @@ export const operationPromiseProcessor = async <DATA, SUB_DATA = DATA>(
   options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => (
   await promise
-    .then(async response => await operationProcessor<DATA, SUB_DATA>(response, options))
-    .catch(async error => await errorProcessor(error, options))
+    .then(response => operationProcessor<DATA, SUB_DATA>(response, options))
+    .catch(error => errorProcessor(error as FetchResult<unknown> | ServiceErrorException, options))
 )

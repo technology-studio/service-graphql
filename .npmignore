@@ -1,7 +1,7 @@
 **
-!src
-!src/**/*
-!lib
-!lib/**/*
-!*.md
-!package.json
+!/src/
+!/src/**/*
+!/lib/
+!/lib/**/*
+!/*.md
+!/package.json

@@ -65,6 +65,6 @@ export const operationPromiseProcessor = async <DATA, SUB_DATA = DATA>(
   options: OperationOptions,
 ): Promise<ServiceCallResult<SUB_DATA, FetchResult<DATA>>> => (
   await promise
-    .then(response => operationProcessor<DATA, SUB_DATA>(response, options))
-    .catch(error => errorProcessor(error as FetchResult<unknown> | ServiceErrorException, options))
+    .then(async response => await Promise.resolve(operationProcessor<DATA, SUB_DATA>(response, options)))
+    .catch(async error => await Promise.reject(errorProcessor(error as FetchResult<unknown> | ServiceErrorException, options)))
 )

@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@txo/log": "^2.0.4",
-    "@txo/service-prop": "^2.2.2",
+    "@txo/service-prop": "^2.2.3",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
@@ -50,7 +50,7 @@
     "@txo-peer-dep/log": "^4.0.1",
     "@txo-peer-dep/service-graphql": "^3.2.2",
     "@txo/log-console": "^3.0.0",
-    "@txo/service-prop": "^2.2.2",
+    "@txo/service-prop": "^2.2.3",
     "@types/jest": "^29.5.3",
     "@types/lodash.get": "^4.4.7",
     "@types/react": "^18.2.15",

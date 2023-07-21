@@ -1479,10 +1479,10 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.1.0.tgz#9a38d0ba2b2355f973775bafe884cdbb7225dc0d"
   integrity sha512-rYSd5Mk4URK3hs7Y5nSXst4KOidmjJPeaNkh+D/L1ndVodvKwXO/rZV00VYXpW71/KSaG1Hj83At3r4WmboKvg==
 
-"@txo/functional@^4.6.1":
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.1.tgz#2e961533dfeee4150b9dfafb2793944a11b1ca3e"
-  integrity sha512-cUoSFVqZKP728rHcLTxYSM8Bn3+oUb9xNPD6lcJ5TMaf9Vs1dn7gRA+tOa8rpo6ZZYKAFSIVYI0S+AyRV7fQ3Q==
+"@txo/functional@^4.6.2":
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.2.tgz#679c38a1f0bea3db8292f661be6ba32501c0de1b"
+  integrity sha512-qjtjDP6/xFTuUQXCpce0bRg/0apxflKIbwjK3y4cABYalIZ/KSpcaxgO3JKdh0+iHO6M/dFaLVwM1/X84wqX8w==
   dependencies:
     "@txo/log" "^2.0.1"
     utility-types "^3.10.0"
@@ -1497,12 +1497,12 @@
   resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.1.tgz#fd96044751a9930cf5136a7248ad8989efce756c"
   integrity sha512-CC+ZkiTbytuNVqvusQFdp72i1G2MhA5ITohxEMEi0qGLGIzxtYT20vYkoFRC8XPbsZydbu9uVtpH5wA/X/g/eg==
 
-"@txo/log@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.2.tgz#98286a2ddcf9d06468634d6a497ff001bff568de"
-  integrity sha512-uuiI41ApkuIubX/JFDgmaJublNJUQStJ8II1/PL6HAk5TR+vWnwqwiP2BMC0Xi9b5mhb40bJh8gK/tnGlUPTaA==
+"@txo/log@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.3.tgz#6eb4aa39ed24462363dcf6258f322e209ec1db07"
+  integrity sha512-J+cVa3CpjVgSOblqP3fAxtdNlFWXJYsw3lL/NdxCOQh6JmW44RsVaEXLNTY1fGLwKJzbYTofnDJPDXnPufgRrg==
   dependencies:
-    "@txo/functional" "^4.6.1"
+    "@txo/functional" "^4.6.2"
 
 "@txo/service-prop@^2.2.2":
   version "2.2.2"

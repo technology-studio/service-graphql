@@ -1534,12 +1534,12 @@
   dependencies:
     "@txo/functional" "^4.6.4"
 
-"@txo/service-prop@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.3.tgz#7bb74b87dee9743bb8f4f3c72e52530952284353"
-  integrity sha512-7c6a8rn/09KEk102LDE7icRZifc7e3qYbYbaO16O8KR+vTpISr0jTBo+sG0vtSZdp4yq/8Etrv9UPFy7RHm+3g==
+"@txo/service-prop@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.4.tgz#c7db62a384b947da98dd9c60341a8e799d0e4446"
+  integrity sha512-5dd3VNU0IGQlFTS7IipBsVcgauwavtNdvm+Z3M1a9/fFu3ualcgPCp8YolB6vDbSRpqvUmHh3qHyYRqa5dK3+A==
   dependencies:
-    "@txo/functional" "^4.6.3"
+    "@txo/functional" "^4.6.4"
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"

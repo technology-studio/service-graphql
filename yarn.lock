@@ -1542,6 +1542,13 @@
   dependencies:
     "@txo/functional" "^4.6.4"
 
+"@txo/log@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.6.tgz#eae342aafbecce8bba80deb6d6f8e70dc9688a6a"
+  integrity sha512-0za8BU9sBwT4ITWmHyAtLDIPq93U4sVCOAC6DlPjaRmDaPE7TdEwFnAzmcCze4v5YMi0x6GNKPCj4g2HBUnLgw==
+  dependencies:
+    "@txo/functional" "^4.6.5"
+
 "@txo/service-prop@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.5.tgz#841c952145bfe859ffaea4f41913a398ce2e7fc8"

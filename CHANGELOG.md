@@ -1,3 +1,10 @@
+## [4.3.14](https://github.com/technology-studio/service-graphql/compare/v4.3.13...v4.3.14) (2023-07-23)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/service-graphql to ^3.2.8 ([fe708de](https://github.com/technology-studio/service-graphql/commit/fe708de135007461f3de4dc028abac280788d566))
+
 ## [4.3.13](https://github.com/technology-studio/service-graphql/compare/v4.3.12...v4.3.13) (2023-07-23)
 
 

@@ -39,7 +39,7 @@
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
-    "@txo-peer-dep/service-graphql": "^3.2.11"
+    "@txo-peer-dep/service-graphql": "^3.2.12"
   },
   "devDependencies": {
     "@apollo/client": "^3.7.17",
@@ -48,7 +48,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@txo-peer-dep/log": "^4.0.1",
-    "@txo-peer-dep/service-graphql": "^3.2.11",
+    "@txo-peer-dep/service-graphql": "^3.2.12",
     "@txo/log-console": "^3.0.0",
     "@txo/service-prop": "^2.2.10",
     "@types/jest": "^29.5.3",

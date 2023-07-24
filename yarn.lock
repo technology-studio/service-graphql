@@ -1479,6 +1479,14 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.1.0.tgz#9a38d0ba2b2355f973775bafe884cdbb7225dc0d"
   integrity sha512-rYSd5Mk4URK3hs7Y5nSXst4KOidmjJPeaNkh+D/L1ndVodvKwXO/rZV00VYXpW71/KSaG1Hj83At3r4WmboKvg==
 
+"@txo/functional@^4.6.10":
+  version "4.6.10"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.10.tgz#ffb1b120ec56af9d24f913da530d2cc059ec2e5c"
+  integrity sha512-bL3ZL1lP7GEWHTQBSn0BBGexHg5/TdIQhmrRzAGsC6aGwAQ1a9nuVXfTx0lVfYQrXvLiSef5EaWYKhnPITGJnw==
+  dependencies:
+    "@txo/log" "^2.0.10"
+    utility-types "^3.10.0"
+
 "@txo/functional@^4.6.2":
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.2.tgz#679c38a1f0bea3db8292f661be6ba32501c0de1b"
@@ -1609,12 +1617,12 @@
   dependencies:
     "@txo/functional" "^4.6.8"
 
-"@txo/service-prop@^2.2.9":
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.9.tgz#4a646b0ec08a91247a1952fccf748fc8382e1e67"
-  integrity sha512-bgsBstX3hDTpuu4ZYInLWaPAtqgIsU/iAmwNw7kJpdnuQLuVEXQTI9EgB5E+uVburE4ksPm+1i9xWLQxPAGfYg==
+"@txo/service-prop@^2.2.10":
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.10.tgz#2725cef5c7c47b434777901cf0a5539302df2f5c"
+  integrity sha512-o6YNIYWY7gLbMDucjQOLwLV3KLUJG40iMTv+6hnCdX7z64APlaPIHTrcd+SVeOZnZ27zvgorKx6IUDu/N8nXlA==
   dependencies:
-    "@txo/functional" "^4.6.9"
+    "@txo/functional" "^4.6.10"
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"

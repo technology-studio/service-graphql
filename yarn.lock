@@ -1466,13 +1466,13 @@
   dependencies:
     "@txo/config-manager" "^3.1.0"
 
-"@txo-peer-dep/service-graphql@^3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@txo-peer-dep/service-graphql/-/service-graphql-3.2.10.tgz#2f9851ce135776042ce14d1aaa143a5b1009e357"
-  integrity sha512-G524Wtv6OU9YnDu1LuBQGTrszfja8pEXRsMgHxvsxQYil6/Lil1vtG2jx+CEmzQXsw2nc6rpVS2TwyI4jrNKpw==
+"@txo-peer-dep/service-graphql@^3.2.11":
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/service-graphql/-/service-graphql-3.2.11.tgz#84c3a5ac3397b2a40a6ebcf8d9589accf996398a"
+  integrity sha512-ykiFuppYH8cmpVDsniYbEqWN3q/zZJjyz3dKe2u/B0PA77eCTAxK0g7tnP4LKMKSCRQ5H9ybph3aiShDvbFGuA==
   dependencies:
     "@txo/config-manager" "^3.1.0"
-    "@txo/log" "^2.0.10"
+    "@txo/log" "^2.0.11"
 
 "@txo/config-manager@^3.1.0":
   version "3.1.0"

@@ -34,7 +34,7 @@
     "update-boilerplate-version": "./scripts/update-boilerplate-version.sh"
   },
   "dependencies": {
-    "@txo/log": "^2.0.9",
+    "@txo/log": "^2.0.10",
     "@txo/service-prop": "^2.2.9",
     "lodash.get": "^4.4.2"
   },

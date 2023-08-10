@@ -1467,10 +1467,10 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.1.0.tgz#9a38d0ba2b2355f973775bafe884cdbb7225dc0d"
   integrity sha512-rYSd5Mk4URK3hs7Y5nSXst4KOidmjJPeaNkh+D/L1ndVodvKwXO/rZV00VYXpW71/KSaG1Hj83At3r4WmboKvg==
 
-"@txo/functional@^4.6.11":
-  version "4.6.11"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.11.tgz#0e29b73c6c5ba501dbe00a7f781b62bf90e07809"
-  integrity sha512-WbQdvBQUbe0ythYQ5/EcvTc2qPTTeLuN0f1T/XrJB5eV4KJN+ZjkSMk3fnQX+aM125NLSvdYLDufKhj7kod9Dw==
+"@txo/functional@^4.6.12":
+  version "4.6.12"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.12.tgz#0fb64b5840ad8edc8f05f7303f374f963d76ce15"
+  integrity sha512-Z21aUxhmqL9t4M+lH2tT59s+SxhtYi3uSUj4akKQTUFyZ2jcOYil8B6IF5H4g4QM2I4B/Ic9KuRCTYWsYDi4Wg==
   dependencies:
     "@txo/log" "^2.0.12"
     utility-types "^3.10.0"
@@ -1485,12 +1485,12 @@
   resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.12.tgz#008c0eaddec1a609536c9d42a32b62653bd3629f"
   integrity sha512-TsRf+b2nIis6waurFfg+kQlRMG1hIlaXpZl6RdLFrJrHYoB5/X2Q3we3pFsOgBhLh06VhU1aD1tar+0N/Qeq9A==
 
-"@txo/service-prop@^2.2.11":
-  version "2.2.11"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.11.tgz#97e4451e41ea272d144560366a93662246ff9d3a"
-  integrity sha512-FsFhUhr13kqKX4OWMd+wA0dzsUof5bsBUa+xL2pAQFFGd0EkmWizwsscakWlLsz7RRvLhPW01xH6uYFzUYPwuA==
+"@txo/service-prop@^2.2.12":
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.12.tgz#d8ee194bb70573d2f39060744470474a26dd84d2"
+  integrity sha512-31QQWd9DlQzH5+FXw+d0WNK200YAVhlusrk6M1ktadNiCuX75mve7zR8ItEGSE7uqw75l/0uBsiECypcBNrWhQ==
   dependencies:
-    "@txo/functional" "^4.6.11"
+    "@txo/functional" "^4.6.12"
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"
@@ -3372,9 +3372,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-"eslint-config-standard-with-typescript@git+https://github.com/technology-studio-forks/eslint-config-standard-with-typescript.git":
+"eslint-config-standard-with-typescript@https://github.com/technology-studio-forks/eslint-config-standard-with-typescript":
   version "36.0.0"
-  resolved "git+https://github.com/technology-studio-forks/eslint-config-standard-with-typescript.git#9cae293318a111911178737ae4159896c19aa700"
+  uid "9cae293318a111911178737ae4159896c19aa700"
+  resolved "https://github.com/technology-studio-forks/eslint-config-standard-with-typescript#9cae293318a111911178737ae4159896c19aa700"
   dependencies:
     "@typescript-eslint/parser" "^6.0.0"
     eslint-config-standard "17.0.0"

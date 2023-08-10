@@ -33,6 +33,9 @@
     "semantic-release": "semantic-release",
     "update-boilerplate-version": "./scripts/update-boilerplate-version.sh"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@txo/log": "^2.0.12",
     "@txo/service-prop": "^2.2.11",
@@ -42,7 +45,7 @@
     "@txo-peer-dep/service-graphql": "^3.2.12"
   },
   "devDependencies": {
-    "@apollo/client": "^3.7.17",
+    "@apollo/client": "^3.8.0",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@semantic-release/changelog": "^6.0.3",
@@ -53,6 +56,7 @@
     "@txo/service-prop": "^2.2.11",
     "@types/jest": "^29.5.3",
     "@types/lodash.get": "^4.4.7",
+    "@types/node-fetch": "^2.6.4",
     "@types/react": "^18.2.20",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",

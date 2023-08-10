@@ -29,7 +29,7 @@ module.exports = {
   ],
   transform: {
     '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: './tsconfig.json'
+      tsconfig: './__tests__/tsconfig.json'
     }]
   },
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' } ),

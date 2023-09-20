@@ -1542,6 +1542,11 @@
   resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.12.tgz#008c0eaddec1a609536c9d42a32b62653bd3629f"
   integrity sha512-TsRf+b2nIis6waurFfg+kQlRMG1hIlaXpZl6RdLFrJrHYoB5/X2Q3we3pFsOgBhLh06VhU1aD1tar+0N/Qeq9A==
 
+"@txo/log@^2.0.13":
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.13.tgz#663100f59df18f4ddec9d85f62a20ec4b5e24b54"
+  integrity sha512-fDUAJ5n+bC+/xqHFpM4Ua4nuQjWcRLTSksLR5mLXZoUlH787SUzFkpUvjFJeiGKXOqUKt35ImInLZb0oQ6yHhg==
+
 "@txo/service-prop@^2.2.12":
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.12.tgz#d8ee194bb70573d2f39060744470474a26dd84d2"

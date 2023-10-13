@@ -15,7 +15,7 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apollo/client@^3.8.5":
+"@apollo/client@^3.8.4":
   version "3.8.5"
   resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.8.5.tgz#becd2101d6049afd03dd796693fb5804346df42f"
   integrity sha512-/ueWC3f1pFeH+tWbM1phz6pzUGGijyml6oQ+LKUcQzpXF6tVFPrb6oUIUQCbZpr6Xmv/dtNiFDohc39ra7Solg==
@@ -1626,7 +1626,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/react@^18.2.28":
+"@types/react@^18.2.24":
   version "18.2.28"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.28.tgz#86877465c0fcf751659a36c769ecedfcfacee332"
   integrity sha512-ad4aa/RaaJS3hyGz0BGegdnSRXQBkd1CCYDCdNjBPg90UUpLgo+WlJqb9fMYUxtehmzF3PJaTWqRZjko6BRzBg==
@@ -1672,7 +1672,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^6.7.5":
+"@typescript-eslint/eslint-plugin@^6.7.3":
   version "6.7.5"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.7.5.tgz#f4024b9f63593d0c2b5bd6e4ca027e6f30934d4f"
   integrity sha512-JhtAwTRhOUcP96D0Y6KYnwig/MRQbOoLGXTON2+LlyB/N35SP9j1boai2zzwXb7ypKELXMx3DVk9UTaEq1vHEw==
@@ -1700,7 +1700,7 @@
     "@typescript-eslint/visitor-keys" "6.4.1"
     debug "^4.3.4"
 
-"@typescript-eslint/parser@^6.7.5":
+"@typescript-eslint/parser@^6.7.3":
   version "6.7.5"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-6.7.5.tgz#8d7ca3d1fbd9d5a58cc4d30b2aa797a760137886"
   integrity sha512-bIZVSGx2UME/lmhLcjdVc7ePBwn7CLqKarUBL4me1C5feOd663liTGjMBGVcGr+BhnSLeP4SgwdvNnnkbIdkCw==

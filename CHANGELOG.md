@@ -1,3 +1,10 @@
+## [4.4.0](https://github.com/technology-studio/service-graphql/compare/v4.3.23...v4.4.0) (2023-11-10)
+
+
+### Features
+
+* migrate to flat eslint config ([#485](https://github.com/technology-studio/service-graphql/issues/485)) ([3fd68f8](https://github.com/technology-studio/service-graphql/commit/3fd68f8d9bc01861162d9bd590ee4461c9229e26))
+
 ## [4.3.23](https://github.com/technology-studio/service-graphql/compare/v4.3.22...v4.3.23) (2023-09-20)
 
 

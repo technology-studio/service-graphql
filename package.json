@@ -42,12 +42,12 @@
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
-    "@txo-peer-dep/service-graphql": "^3.3.0"
+    "@txo-peer-dep/service-graphql": "^3.3.1"
   },
   "devDependencies": {
     "@apollo/client": "^3.8.7",
     "@txo-peer-dep/log": "^4.0.3",
-    "@txo-peer-dep/service-graphql": "^3.3.0",
+    "@txo-peer-dep/service-graphql": "^3.3.1",
     "@txo/commitlint": "^1.0.5",
     "@txo/log-console": "^3.0.0",
     "@txo/semantic-release": "^1.0.2",

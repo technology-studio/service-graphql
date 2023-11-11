@@ -1468,12 +1468,12 @@
   dependencies:
     "@txo/config-manager" "^3.2.0"
 
-"@txo-peer-dep/service-graphql@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@txo-peer-dep/service-graphql/-/service-graphql-3.3.0.tgz#cd09575ba9a7d7eb48cf228fe430e98c67c02036"
-  integrity sha512-riFIqX5IeOuCgnQBVNx9yEBiudmT2KedXgwXG8k2nvxIm3S57dzpy2icG2rHYZ4LdOVL3sCylt9kWuPTdi5g1g==
+"@txo-peer-dep/service-graphql@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@txo-peer-dep/service-graphql/-/service-graphql-3.3.1.tgz#83d6879c210317dbc930f2e8d8e4563b9924a022"
+  integrity sha512-AIIO9RI0dXJBioUn3vab/lvGxJ4mULeYOynZ0M9NldjDlbm24/JclHAEnFGW8ndbxrAfQxt2sRbUGBpoLQmNlg==
   dependencies:
-    "@txo/config-manager" "^3.1.0"
+    "@txo/config-manager" "^3.2.0"
     "@txo/log" "^2.0.13"
 
 "@txo/commitlint@^1.0.5":
@@ -1484,11 +1484,6 @@
     "@commitlint/cli" "^18.2.0"
     "@commitlint/config-conventional" "^18.1.0"
     commitizen "^4.3.0"
-
-"@txo/config-manager@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.1.0.tgz#9a38d0ba2b2355f973775bafe884cdbb7225dc0d"
-  integrity sha512-rYSd5Mk4URK3hs7Y5nSXst4KOidmjJPeaNkh+D/L1ndVodvKwXO/rZV00VYXpW71/KSaG1Hj83At3r4WmboKvg==
 
 "@txo/config-manager@^3.2.0":
   version "3.2.0"

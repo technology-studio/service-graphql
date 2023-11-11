@@ -1,3 +1,10 @@
+## [4.4.3](https://github.com/technology-studio/service-graphql/compare/v4.4.2...v4.4.3) (2023-11-11)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/log to ^2.0.14 ([22a2d22](https://github.com/technology-studio/service-graphql/commit/22a2d220a6ff98159019f0707ab0940365c137b3))
+
 ## [4.4.2](https://github.com/technology-studio/service-graphql/compare/v4.4.1...v4.4.2) (2023-11-11)
 
 

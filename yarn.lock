@@ -1490,12 +1490,12 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.2.0.tgz#d6bf817d0b8fa2eece61f79fc99eedf2516d68b1"
   integrity sha512-P4t09H/Q6AHoyps0jBy5tSp/HruQteyUeoxr758D2entD+rd8f0XXAdcrCCEIBeihlNAkv4MVj/n8bJulw5CLg==
 
-"@txo/functional@^4.6.15":
-  version "4.6.15"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.15.tgz#f3e36be137396389140f26a695fd2b40fb3eface"
-  integrity sha512-wAcKjzmRKTShSJFG7qfXg8Rfw12W65I8METllqa8iqttUmEknwrogu4Iw30LmTOH0czPkXazkxGsct6QcPPlEg==
+"@txo/functional@^4.6.16":
+  version "4.6.17"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.17.tgz#6524b8850e7ff7e593d07b3ffa376910572e90b7"
+  integrity sha512-n+V7CQseye5rm6UqQfHXCxkyP57Nld/ZSUy8GIb0W4iBKW/hta498uA+ZvWpsrzZfQObjCCDVJQbq4RHRWnSNQ==
   dependencies:
-    "@txo/log" "^2.0.13"
+    "@txo/log" "^2.0.14"
     utility-types "^3.10.0"
 
 "@txo/log-console@^3.0.0":
@@ -1523,12 +1523,12 @@
     semantic-release "^22.0.7"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@^2.2.14":
-  version "2.2.14"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.14.tgz#d6f91ab70c6aed816f519b1b96a7a26625291521"
-  integrity sha512-A+xGhYRcBBlbVzyPCHj6AD5zNQfyGjKfuacHud7aCfER62f1COzsvICIO7+LD2Lony2btTFE+a+gTK8Boowhew==
+"@txo/service-prop@^2.2.15":
+  version "2.2.15"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.15.tgz#bba6b187c3c9b1e9cda8138e59fceeaef518b986"
+  integrity sha512-CMbiC9j7bszpOAQ/9gL9F0OpQmv3Zcj0qZqf3H/0xbn8n9hFuk44wUTBUmRd9bxrnQeRCyBkfluxGcneNyj8NA==
   dependencies:
-    "@txo/functional" "^4.6.15"
+    "@txo/functional" "^4.6.16"
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"

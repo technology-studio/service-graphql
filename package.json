@@ -37,7 +37,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@txo/log": "^2.0.13",
+    "@txo/log": "^2.0.14",
     "@txo/service-prop": "^2.2.14",
     "lodash.get": "^4.4.2"
   },

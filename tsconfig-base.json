@@ -1,16 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "dom"],
     "jsx": "react",
-    "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noEmit": true,
-    "declaration": false,
-    "esModuleInterop": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "sourceMap": true
-  }
+    "skipLibCheck": true
+  },
+  "extends": "@txo/tsconfig"
 }

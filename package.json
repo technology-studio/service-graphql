@@ -50,7 +50,7 @@
     "@txo-peer-dep/service-graphql": "^3.3.2",
     "@txo/commitlint": "^1.0.7",
     "@txo/log-console": "^3.0.0",
-    "@txo/semantic-release": "^1.0.2",
+    "@txo/semantic-release": "^1.0.3",
     "@txo/service-prop": "^2.2.16",
     "@types/jest": "^29.5.8",
     "@types/lodash.get": "^4.4.9",

@@ -45,7 +45,7 @@
     "@txo-peer-dep/service-graphql": "^3.3.2"
   },
   "devDependencies": {
-    "@apollo/client": "^3.9.1",
+    "@apollo/client": "^3.9.2",
     "@txo-peer-dep/log": "^4.0.3",
     "@txo-peer-dep/service-graphql": "^3.3.2",
     "@txo/commitlint": "^1.0.12",

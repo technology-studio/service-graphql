@@ -48,7 +48,7 @@
     "@apollo/client": "^3.9.6",
     "@txo-peer-dep/log": "^4.0.3",
     "@txo-peer-dep/service-graphql": "^3.3.2",
-    "@txo/commitlint": "^1.0.13",
+    "@txo/commitlint": "^1.0.14",
     "@txo/log-console": "^3.0.0",
     "@txo/semantic-release": "^1.0.8",
     "@txo/service-prop": "^2.2.16",

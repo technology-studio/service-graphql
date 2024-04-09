@@ -1338,13 +1338,13 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.2.0.tgz#d6bf817d0b8fa2eece61f79fc99eedf2516d68b1"
   integrity sha512-P4t09H/Q6AHoyps0jBy5tSp/HruQteyUeoxr758D2entD+rd8f0XXAdcrCCEIBeihlNAkv4MVj/n8bJulw5CLg==
 
-"@txo/functional@^4.6.17":
-  version "4.6.17"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.17.tgz#6524b8850e7ff7e593d07b3ffa376910572e90b7"
-  integrity sha512-n+V7CQseye5rm6UqQfHXCxkyP57Nld/ZSUy8GIb0W4iBKW/hta498uA+ZvWpsrzZfQObjCCDVJQbq4RHRWnSNQ==
+"@txo/functional@^4.6.18":
+  version "4.6.19"
+  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.19.tgz#b51cb2c71307618e086c512108e60ef2b3cc6591"
+  integrity sha512-SDmY7+VKENWD/E6oHAWMx8eeNZc6GsTg47+sL8cHuB5+eLMzsxPPxatT1+VdEe5mFc3heNaGRBTiZQVPa6FM7w==
   dependencies:
-    "@txo/log" "^2.0.14"
-    utility-types "^3.10.0"
+    "@txo/log" "^2.0.16"
+    utility-types "^3.11.0"
 
 "@txo/log-console@^3.0.0":
   version "3.0.0"
@@ -1366,12 +1366,12 @@
     semantic-release "^22.0.12"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@^2.2.16":
-  version "2.2.16"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.16.tgz#e18264bfd19583faf717f2425f92259f75ee7576"
-  integrity sha512-51R0uGJvp3yttxQ43S739x8TNL0JB4MxmaRHv3IpXgXS5DFsyKlJH8riOuQbH8Ly547ib85Abbu4BS6SmSp5ag==
+"@txo/service-prop@^2.2.17":
+  version "2.2.17"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.17.tgz#21b8ee535189004d8a1ffdfe9f9c61ba12f8a34d"
+  integrity sha512-P8gcv3XVZmJqwIW+BWF6ODq3bC/nEbORlsZfWVRme6w8IXVevSxVdfj/cJpYG+cExXhkmgTqJTSPvaYmcL4AdA==
   dependencies:
-    "@txo/functional" "^4.6.17"
+    "@txo/functional" "^4.6.18"
 
 "@txo/tsconfig@^1.1.1":
   version "1.1.1"
@@ -8027,10 +8027,10 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-utility-types@^3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
-  integrity sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
+utility-types@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.11.0.tgz#607c40edb4f258915e901ea7995607fdf319424c"
+  integrity sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==
 
 v8-to-istanbul@^9.0.1:
   version "9.0.1"

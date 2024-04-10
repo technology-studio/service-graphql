@@ -1338,7 +1338,7 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.2.0.tgz#d6bf817d0b8fa2eece61f79fc99eedf2516d68b1"
   integrity sha512-P4t09H/Q6AHoyps0jBy5tSp/HruQteyUeoxr758D2entD+rd8f0XXAdcrCCEIBeihlNAkv4MVj/n8bJulw5CLg==
 
-"@txo/functional@^4.6.18":
+"@txo/functional@^4.6.19":
   version "4.6.19"
   resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.19.tgz#b51cb2c71307618e086c512108e60ef2b3cc6591"
   integrity sha512-SDmY7+VKENWD/E6oHAWMx8eeNZc6GsTg47+sL8cHuB5+eLMzsxPPxatT1+VdEe5mFc3heNaGRBTiZQVPa6FM7w==
@@ -1366,12 +1366,12 @@
     semantic-release "^22.0.12"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@^2.2.17":
-  version "2.2.17"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.17.tgz#21b8ee535189004d8a1ffdfe9f9c61ba12f8a34d"
-  integrity sha512-P8gcv3XVZmJqwIW+BWF6ODq3bC/nEbORlsZfWVRme6w8IXVevSxVdfj/cJpYG+cExXhkmgTqJTSPvaYmcL4AdA==
+"@txo/service-prop@^2.2.18":
+  version "2.2.18"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.18.tgz#2399b461581bc03cf7f225e69cd98257b6260908"
+  integrity sha512-uwMjp2ljKH9lvQs+yZX0NmTswkBUSiHJIRXIGzvcRBufdNnz0jn8dqOZLqBHb1H5J/JjjCKUdOUqFXkwYJwQiQ==
   dependencies:
-    "@txo/functional" "^4.6.18"
+    "@txo/functional" "^4.6.19"
 
 "@txo/tsconfig@^1.1.1":
   version "1.1.1"

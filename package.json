@@ -45,7 +45,7 @@
     "@txo-peer-dep/service-graphql": "^3.3.3"
   },
   "devDependencies": {
-    "@apollo/client": "^3.9.11",
+    "@apollo/client": "^3.10.1",
     "@txo-peer-dep/log": "^4.0.4",
     "@txo-peer-dep/service-graphql": "^3.3.3",
     "@txo/commitlint": "^1.0.14",
@@ -56,9 +56,9 @@
     "@types/jest": "^29.5.12",
     "@types/lodash.get": "^4.4.9",
     "@types/node-fetch": "^2.6.11",
-    "@types/react": "^18.2.79",
+    "@types/react": "^18.3.1",
     "concurrently": "^8.2.2",
-    "eslint-config-txo-typescript": "^4.0.53",
+    "eslint-config-txo-typescript": "^4.0.56",
     "graphql": "^16.8.1",
     "husky": "^9.0.11",
     "jest": "^29.7.0",

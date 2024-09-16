@@ -58,7 +58,7 @@
     "@types/jest": "^29.5.13",
     "@types/lodash.get": "^4.4.9",
     "@types/node-fetch": "^2.6.11",
-    "@types/react": "^18.3.5",
+    "@types/react": "^18.3.6",
     "concurrently": "^9.0.1",
     "eslint-config-txo-typescript": "^4.0.66",
     "graphql": "^16.9.0",

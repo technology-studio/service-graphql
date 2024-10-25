@@ -21,7 +21,7 @@
     "build:lib": "yarn tsc",
     "build:watch": "yarn tsc --watch",
     "test": "jest",
-    "test:watch": "concurrently \"yarn build:watch\" \"jest --watch\"",
+    "test:watch": "concurrently \"yarn build:watch\" \"yarn test --watch\"",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
     "compare-boilerplate-version": "./scripts/compare-boilerplate-version.sh",
     "lint": "eslint --max-warnings 0 .",

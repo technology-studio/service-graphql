@@ -21,7 +21,7 @@
     "build:lib": "yarn tsc",
     "build:watch": "yarn tsc --watch",
     "test": "jest",
-    "test:watch": "concurrently \"yarn build:watch\" \"jest --watch\"",
+    "test:watch": "concurrently \"yarn build:watch\" \"yarn test --watch\"",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
     "compare-boilerplate-version": "./scripts/compare-boilerplate-version.sh",
     "lint": "eslint --max-warnings 0 .",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@txo/log": "^2.0.16",
-    "@txo/service-prop": "^2.2.20",
+    "@txo/service-prop": "^3.0.0",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
@@ -53,7 +53,6 @@
     "@txo/commitlint": "^1.0.19",
     "@txo/log-console": "^3.0.0",
     "@txo/semantic-release": "^2.0.8",
-    "@txo/service-prop": "^2.2.20",
     "@txo/tsconfig": "^1.1.1",
     "@types/jest": "^29.5.14",
     "@types/lodash.get": "^4.4.9",

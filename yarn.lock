@@ -1345,14 +1345,6 @@
   resolved "https://registry.yarnpkg.com/@txo/config-manager/-/config-manager-3.2.0.tgz#d6bf817d0b8fa2eece61f79fc99eedf2516d68b1"
   integrity sha512-P4t09H/Q6AHoyps0jBy5tSp/HruQteyUeoxr758D2entD+rd8f0XXAdcrCCEIBeihlNAkv4MVj/n8bJulw5CLg==
 
-"@txo/functional@^4.6.19":
-  version "4.6.19"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.6.19.tgz#b51cb2c71307618e086c512108e60ef2b3cc6591"
-  integrity sha512-SDmY7+VKENWD/E6oHAWMx8eeNZc6GsTg47+sL8cHuB5+eLMzsxPPxatT1+VdEe5mFc3heNaGRBTiZQVPa6FM7w==
-  dependencies:
-    "@txo/log" "^2.0.16"
-    utility-types "^3.11.0"
-
 "@txo/log-console@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@txo/log-console/-/log-console-3.0.0.tgz#56506a8c6afea9109301ff96520c43815814022d"
@@ -1373,17 +1365,22 @@
     semantic-release "^23.0.8"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@^2.2.20":
-  version "2.2.20"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-2.2.20.tgz#a7d3f5e237e19f80e269c4f5bd92b9d08a9b6d4f"
-  integrity sha512-LjTFX/iBiFvG2yuJm/Kk3Qsp6DNWqVNPeMfaaTe80sbFS/a4n5uBhrRVG4/oqe9NJg4O+8HllNKcqJYxwolAPw==
+"@txo/service-prop@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-3.0.0.tgz#632d0ba2e4023d23effc467d2869331d1876f7b4"
+  integrity sha512-3vq4YSFvxNcZOwtXu3HMsdsd+aPGOcDN2bjiQUumXPSOgX0+TuSOybe4QgdmcIGD4aIhsg9+dFnnWPYcPWGsqw==
   dependencies:
-    "@txo/functional" "^4.6.19"
+    "@txo/types" "^1.7.0"
 
 "@txo/tsconfig@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@txo/tsconfig/-/tsconfig-1.1.1.tgz#0e746a34c5a5092459235e15588fb33e94cbf067"
   integrity sha512-YA8LdOoATb+LgwHlVFKxbR6i4xWkr1h6dGTqLh3HHGe25wYzJ7rixNNWucCXaY270Dmb33JQi5sDe6a1XtwRcg==
+
+"@txo/types@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@txo/types/-/types-1.7.0.tgz#bb9db4417ceae237e51c14897f5c3f8b9f78cba2"
+  integrity sha512-mZfrfHMZK1hMDXKS7A8uvcBqqzYi5LLqg+wj4sDL77FZjQlZTdzXKlwwdco0HFamBPJS3iiDufW0Q/ZAyeRzSw==
 
 "@types/babel__core@^7.1.14":
   version "7.1.19"
@@ -7855,11 +7852,6 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-
-utility-types@^3.11.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.11.0.tgz#607c40edb4f258915e901ea7995607fdf319424c"
-  integrity sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==
 
 v8-to-istanbul@^9.0.1:
   version "9.0.1"

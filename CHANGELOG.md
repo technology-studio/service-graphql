@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/technology-studio/service-graphql/compare/v5.0.0...v5.0.1) (2024-10-28)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/service-prop to ^3.0.1 ([#731](https://github.com/technology-studio/service-graphql/issues/731)) ([c4cfca0](https://github.com/technology-studio/service-graphql/commit/c4cfca06ac67035afb2662b0dfcc0ce38aa4ae97))
+
 ## [5.0.0](https://github.com/technology-studio/service-graphql/compare/v4.4.6...v5.0.0) (2024-10-28)
 
 

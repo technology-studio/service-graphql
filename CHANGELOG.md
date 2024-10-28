@@ -1,3 +1,21 @@
+## [5.0.0](https://github.com/technology-studio/service-graphql/compare/v4.4.6...v5.0.0) (2024-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade of dependency @txo/service-prop@3.0.0
+
+### CI
+
+* add lint command for CI ([#695](https://github.com/technology-studio/service-graphql/issues/695)) ([949dde0](https://github.com/technology-studio/service-graphql/commit/949dde04ff2968d2190aaef143191af7c9ddd878))
+* rename workflows ([#709](https://github.com/technology-studio/service-graphql/issues/709)) ([d2a6bce](https://github.com/technology-studio/service-graphql/commit/d2a6bcef0239e50a84ff481504b69d052af2cadd))
+* update URL for code-quality ([#701](https://github.com/technology-studio/service-graphql/issues/701)) ([539fa76](https://github.com/technology-studio/service-graphql/commit/539fa76d02456c990ebd27b615e4bd5c31a65143))
+
+
+### Bug fixes
+
+* change to `ServiceOperationError` ([#728](https://github.com/technology-studio/service-graphql/issues/728)) ([a3d9b78](https://github.com/technology-studio/service-graphql/commit/a3d9b784cedbf9b8d67127937725adcb5e54fe7b))
+
 ## [4.4.6](https://github.com/technology-studio/service-graphql/compare/v4.4.5...v4.4.6) (2024-04-10)
 
 

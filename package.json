@@ -1,6 +1,6 @@
 {
   "name": "@txo/service-graphql",
-  "version": "4.4.6",
+  "version": "5.0.0",
   "description": "Technology Studio - Service graphql",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

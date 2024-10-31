@@ -1365,10 +1365,10 @@
     semantic-release "^23.0.8"
     semantic-release-slack-bot "^4.0.2"
 
-"@txo/service-prop@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-3.0.2.tgz#5f64a473108cd23e92ce3367cc6a8723a875680a"
-  integrity sha512-CgXFpL7h85vMXWZPKwGsY6zey78/ZOyjpN/SiD52r1S8gZt/TzvfBOrSXQ8yk8RxvxwX4hPtBe2UwJHp9sw8bQ==
+"@txo/service-prop@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@txo/service-prop/-/service-prop-3.0.3.tgz#f8518ec014131358e9e531eba6812f3bedc79f83"
+  integrity sha512-Rt9GVlVXrMFFdK+x36rF86p5IUid49ez4s+aaow4CtMz6KF+j2mEeNvbhqa60Q8rFrwQVbprveXGKWH4EQGnOg==
   dependencies:
     "@txo/types" "^1.7.0"
 

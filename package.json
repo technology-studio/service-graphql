@@ -50,7 +50,7 @@
     "@apollo/client": "^3.11.10",
     "@txo-peer-dep/log": "^4.0.4",
     "@txo-peer-dep/service-graphql": "^3.3.3",
-    "@txo/commitlint": "^1.0.19",
+    "@txo/commitlint": "^1.0.20",
     "@txo/log-console": "^3.0.0",
     "@txo/semantic-release": "^2.0.9",
     "@txo/tsconfig": "^1.1.1",

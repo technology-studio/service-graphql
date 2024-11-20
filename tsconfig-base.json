@@ -2,5 +2,5 @@
   "compilerOptions": {
     "lib": ["esnext", "dom"]
   },
-  "extends": "@txo/tsconfig"
+  "extends": "@txo/tsconfig-cjs"
 }

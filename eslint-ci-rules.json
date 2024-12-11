@@ -1,0 +1,7 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-unnecessary-type-parameters",
+  "@typescript-eslint/no-unsafe-type-assertion",
+  "@typescript-eslint/use-unknown-in-catch-callback-variable",
+  "@typescript-eslint/prefer-promise-reject-errors"
+]

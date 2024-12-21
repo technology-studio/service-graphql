@@ -1562,14 +1562,7 @@
     "@types/node" "*"
     form-data "^4.0.0"
 
-"@types/node@*":
-  version "22.5.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.4.tgz#83f7d1f65bc2ed223bdbf57c7884f1d5a4fa84e8"
-  integrity sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==
-  dependencies:
-    undici-types "~6.19.2"
-
-"@types/node@^22.10.2":
+"@types/node@*", "@types/node@^22.10.2":
   version "22.10.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.2.tgz#a485426e6d1fdafc7b0d4c7b24e2c78182ddabb9"
   integrity sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==
@@ -3082,17 +3075,17 @@ eslint-config-love@^112.0.0:
     eslint-plugin-promise "^7.0.0"
     typescript-eslint "^8.15.0"
 
-eslint-config-txo-package-typescript@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.13.tgz#56ddd1b4960c1ed6683806876dcaaa380cb0db60"
-  integrity sha512-H7G4+iaXh4VKiFQgjdfFVk9kSKz9eVZj5XebNT9vr+iSka2500QbGWeAJF6xArxcK8PV5OwJXa2RdQCM1pp/5g==
+eslint-config-txo-package-typescript@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.14.tgz#ab312e7cf38348c84da9d019dc4e9a1144f48015"
+  integrity sha512-7CxJtYZD2FlOZe5o1fsGjX4gfpzPEFAOTtniv7TcN36CYLuwcsipihjdSCbZj1IL67OOTwH74J8yxrVbork3QA==
   dependencies:
-    eslint-config-txo-typescript "^7.3.6"
+    eslint-config-txo-typescript "^7.3.7"
 
-eslint-config-txo-typescript@^7.3.6:
-  version "7.3.6"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.3.6.tgz#1c4f34e4de79cc79a84c682e1edaa34116051dee"
-  integrity sha512-56Hyy7I0zBviRJXTsU5BLfdd6CfCE/4ixg/0Knnxq0UWIlHaX9V6ULhiuIEbgP29wYRd+StenOHk2hXkqphtvg==
+eslint-config-txo-typescript@^7.3.7:
+  version "7.3.7"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.3.7.tgz#5abf774fcecd4dc716e0f61e83170ceacceecd59"
+  integrity sha512-P5tRf3BoUsKFnhAwjLZy4ImTjmEEhFMjKp6a8yII+mYa3mYHKQd/xwigdmWE9zAB4p9pT6W2zoNi8kRm1SxsVQ==
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments" "^4.4.1"
     "@stylistic/eslint-plugin" "^2.12.1"
@@ -3102,7 +3095,7 @@ eslint-config-txo-typescript@^7.3.6:
     eslint-import-resolver-typescript "^3.7.0"
     eslint-plugin-import "^2.31.0"
     eslint-plugin-jest "^28.10.0"
-    eslint-plugin-n "^17.15.0"
+    eslint-plugin-n "^17.15.1"
     eslint-plugin-promise "^7.2.1"
     globals "^15.14.0"
     typescript-eslint "^8.18.1"
@@ -3187,10 +3180,10 @@ eslint-plugin-jest@^28.10.0:
   dependencies:
     "@typescript-eslint/utils" "^6.0.0 || ^7.0.0 || ^8.0.0"
 
-eslint-plugin-n@^17.0.0, eslint-plugin-n@^17.15.0:
-  version "17.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-17.15.0.tgz#c6ab639a7d7761085cff05313753413d898b087e"
-  integrity sha512-xF3zJkOfLlFOm5TvmqmsnA9/fO+/z2pYs0dkuKXKN/ymS6UB1yEcaoIkqxLKQ9Dw/WmLX/Tdh6/5ZS5azVixFQ==
+eslint-plugin-n@^17.0.0, eslint-plugin-n@^17.15.1:
+  version "17.15.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-17.15.1.tgz#2129bbc7b11466c3bfec57876a15aadfad3a83f2"
+  integrity sha512-KFw7x02hZZkBdbZEFQduRGH4VkIH4MW97ClsbAM4Y4E6KguBJWGfWG1P4HEIpZk2bkoWf0bojpnjNAhYQP8beA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.1"
     enhanced-resolve "^5.17.1"
@@ -7888,11 +7881,6 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
-
-undici-types@~6.19.2:
-  version "6.19.8"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
-  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
 undici-types@~6.20.0:
   version "6.20.0"

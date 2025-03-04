@@ -1672,7 +1672,7 @@
     semver "^7.6.0"
     ts-api-utils "^2.0.1"
 
-"@typescript-eslint/utils@8.26.0", "@typescript-eslint/utils@^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/utils@^8.20.0", "@typescript-eslint/utils@^8.21.0", "@typescript-eslint/utils@^8.23.0", "@typescript-eslint/utils@^8.25.0":
+"@typescript-eslint/utils@8.26.0", "@typescript-eslint/utils@^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/utils@^8.21.0", "@typescript-eslint/utils@^8.23.0", "@typescript-eslint/utils@^8.26.0":
   version "8.26.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/utils/-/utils-8.26.0.tgz#845d20ed8378a5594e6445f54e53b972aee7b3e6"
   integrity sha512-2L2tU3FVwhvU14LndnQCA2frYC8JnPDVKyQtWFPf8IYFMt/ykEN1bPolNhNbCVgOmdzTlWdusCTKA/9nKrf8Ig==
@@ -3063,35 +3063,35 @@ eslint-compat-utils@^0.5.1:
   dependencies:
     semver "^7.5.4"
 
-eslint-config-love@^118.0.0:
-  version "118.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-118.0.0.tgz#3a2dda15416b1ded023fb389877145829150de2b"
-  integrity sha512-f5lN+bRHCCY7PvpbszNJnm8VLPbrPICbD4LWg+GVX1L8UOBgN5bCZXnqlaU3IPinZ58wUKwVfjv8qbaJPyDuzA==
+eslint-config-love@^119.0.0:
+  version "119.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-119.0.0.tgz#372ded9afea83d2be570074c666dc7a1a46197c6"
+  integrity sha512-O6iYQcFPR3lTzSlMSdKmfdKUCIX8ESHM9LV448vw6q6gxWuVzfA5iBCvVuogIeRQLZpH72Jc7W/fz27jcgtNdg==
   dependencies:
-    "@typescript-eslint/utils" "^8.20.0"
+    "@typescript-eslint/utils" "^8.26.0"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-import "^2.31.0"
     eslint-plugin-n "^17.0.0"
     eslint-plugin-promise "^7.0.0"
-    typescript-eslint "^8.20.0"
+    typescript-eslint "^8.26.0"
 
-eslint-config-txo-package-typescript@^1.0.45:
-  version "1.0.45"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.45.tgz#1e93d4b05cacd0de0fb12c3e03e1ad9d5563bc7c"
-  integrity sha512-QuL52cx6oanw9Y2l4wSjWISN+tJcNFxND9k1wmFvtrrLIPMkun/rT3No/RCcqoO7zqJDsTFDo1CW9Ku6tA+Qww==
+eslint-config-txo-package-typescript@^1.0.46:
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.46.tgz#4dca5da744703da1d9f9d78bbe5c932463eb0d9e"
+  integrity sha512-keKEtAq5qtExDEJoBfXjf8BJtmtdEWb3RU6ZyN1Jx/R1K6cLp7bDn8bddHCFyEzb8FvwgmZX1Hhjg5ke48j2nQ==
   dependencies:
-    eslint-config-txo-typescript "^7.4.27"
+    eslint-config-txo-typescript "^7.4.28"
 
-eslint-config-txo-typescript@^7.4.27:
-  version "7.4.28"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.4.28.tgz#fd0bfbf00daf5ec18494781119b0ae7ea50c2421"
-  integrity sha512-CA2Qwj+4R4ARDgNpEiDT4+MElFLd5YtxuLxFRGCoz8D3gUvSOSp2QLhSZd606B0YyatH9AxlQ4GE5jJue6V85A==
+eslint-config-txo-typescript@^7.4.28:
+  version "7.4.29"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.4.29.tgz#b039ed22797b0c2957e65ca371298855a0bf9cad"
+  integrity sha512-avlY2ahWVptldim08kbI5LpoB3zLYIq6K0Pr5BPDpvRD+Fr5e3X4A1zSwr1KMzh7kapAGKmnxmYTYLZ3scendg==
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments" "^4.4.1"
     "@stylistic/eslint-plugin" "^4.2.0"
-    "@typescript-eslint/utils" "^8.25.0"
+    "@typescript-eslint/utils" "^8.26.0"
     eslint "^9.21.0"
-    eslint-config-love "^118.0.0"
+    eslint-config-love "^119.0.0"
     eslint-import-resolver-typescript "^3.8.3"
     eslint-plugin-import "^2.31.0"
     eslint-plugin-jest "^28.11.0"
@@ -7874,7 +7874,7 @@ typed-array-length@^1.0.6:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript-eslint@^8.20.0, typescript-eslint@^8.26.0:
+typescript-eslint@^8.26.0:
   version "8.26.0"
   resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-8.26.0.tgz#f44cafdaa6edc99e3612b33b791eb77a56286320"
   integrity sha512-PtVz9nAnuNJuAVeUFvwztjuUgSnJInODAUx47VDwWPXzd5vismPOtPtt83tzNXyOjVQbPRp786D6WFW/M2koIA==

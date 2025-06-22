@@ -59,7 +59,7 @@
     "@types/node": "^22.15.32",
     "@types/node-fetch": "^2.6.12",
     "@types/react": "^18.3.23",
-    "concurrently": "^9.1.2",
+    "concurrently": "^9.2.0",
     "eslint-config-txo-package-typescript": "^1.0.102",
     "graphql": "^16.11.0",
     "husky": "^9.1.7",

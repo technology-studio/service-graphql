@@ -57,7 +57,7 @@
     "@types/jest": "^29.5.14",
     "@types/lodash.get": "^4.4.9",
     "@types/node": "^22.16.5",
-    "@types/node-fetch": "^2.6.12",
+    "@types/node-fetch": "^2.6.13",
     "@types/react": "^18.3.23",
     "concurrently": "^9.2.0",
     "eslint-config-txo-package-typescript": "^1.0.108",

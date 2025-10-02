@@ -56,7 +56,7 @@
     "@txo/tsconfig-cjs": "^2.0.0",
     "@types/jest": "^29.5.14",
     "@types/lodash.get": "^4.4.9",
-    "@types/node": "^22.18.6",
+    "@types/node": "^22.18.7",
     "@types/node-fetch": "^2.6.13",
     "@types/react": "^18.3.24",
     "concurrently": "^9.2.1",
